@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212529;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+            display: flex !important;
+            flex-direction: column !important;
+            font-weight: 400;
+            min-height: 100vh;
+            margin: 0;
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            max-width: 42em;
+            flex-direction: column;
+            margin: auto;
+            padding: 16px;
+            width: 100% !important;
+            min-height: 100vh;
+        }
+
+        h3 {
+            float: left;
+            margin-top: 0px;
+            margin-bottom: 0;
+            font-size: calc(1.3rem + .6vw);
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: calc(1.375rem + 1.5vw);
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            float: right;
+        }
+
+        header {
+            margin-bottom: auto !important;
+        }
+
+        footer {
+            margin-top: auto !important;
+        }
+
+        #top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main {
+            padding: 0 1rem !important;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .lead {
+            margin-top: 0;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .btn a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: #212529;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+
+        .btn {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            border-bottom: .25rem solid transparent;
+            font-weight: 700 !important;
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            margin-right: 12px;
+            padding-bottom: 5px;
+        }
+
+        #home {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        nav a:hover,
+        #home:hover {
+            border-bottom-color: rgba(255, 255, 255, .5);
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            text-decoration-color: white;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="top">
+                <h3>Cover</h3>
+                <nav>
+                    <a href="#" id="home">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+
+
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1>Cover your page.</h1>
+            </div>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit
+                the text, and
+                add your own fullscreen background photo to make it your own.</p>
+            <div class="btn"><a>Learn more</a></div>
+        </main>
+        <footer>
+            <p>Cover template for <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, by <a
+                    href="https://x.com/mdo" target="_blank">@mdo</a>.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
