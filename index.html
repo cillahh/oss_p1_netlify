@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Sample Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello World!</h1>
+<body class="bg-neutral-50 text-neutral-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#home" class="flex items-center gap-2">
+        <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-white shadow-md">
+          <!-- Placeholder Icon -->
+          <span class="text-lg font-bold">C</span>
+        </div>
+        <div class="leading-tight">
+          <p class="text-sm font-semibold tracking-wide">Portfolio</p>
+          <p class="-mt-0.5 text-xs text-neutral-500">Sample Page</p>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#playground" class="inline-flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-medium text-neutral-700 transition hover:bg-neutral-100 hover:text-neutral-900">
+          🧪 Playground
+        </a>
+        <a href="#" class="inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:shadow">
+          🐙 GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden pt-16 text-center">
+      <h1 class="text-4xl font-extrabold sm:text-5xl">My Developer Portfolio</h1>
+      <p class="mt-4 text-lg text-neutral-600">프로젝트와 실험을 기록하는 개인 포트폴리오 페이지.</p>
+    </section>
+
+    <!-- Page Links -->
+    <section class="mt-16 text-center">
+      <h2 class="text-2xl font-bold mb-6">Additional Pages</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="style1.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style1</a>
+        <a href="style2.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style2</a>
+        <a href="example.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Example</a>
+        <a href="netlify.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Netlify</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-16">
+      <h2 class="text-2xl font-bold mb-6 text-center">My Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
+          <img src="https://via.placeholder.com/300" alt="HOTketing" class="h-40 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">HOTketing</h3>
+          <p class="text-sm text-neutral-600">한동대학교 공연장 현장 예매용 키오스크 앱. Flutter + Firebase로 개발.</p>
+        </div>
+        <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
+          <img src="https://via.placeholder.com/300" alt="코스모스" class="h-40 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">코스모스</h3>
+          <p class="text-sm text-neutral-600">밝고 섬세한 감성을 담아낸 개인 음악 프로젝트.</p>
+        </div>
+        <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
+          <img src="https://via.placeholder.com/300" alt="잔물결" class="h-40 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">잔물결</h3>
+          <p class="text-sm text-neutral-600">따뜻한 자기 탐색과 관계를 주제로 한 곡.</p>
+        </div>
+        <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
+          <img src="https://via.placeholder.com/300" alt="새 프로젝트" class="h-40 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">새 프로젝트</h3>
+          <p class="text-sm text-neutral-600">추가할 프로젝트 설명.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section id="playground" class="mt-16 text-center">
+      <h2 class="text-2xl font-bold mb-6">Playground</h2>
+      <div class="inline-block p-8 rounded-2xl border border-neutral-200 bg-white shadow-sm">
+        <p class="text-neutral-600">실험적인 UI/UX와 코드 예제를 확인해보세요.</p>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="mt-16 text-center">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p class="text-neutral-600 max-w-2xl mx-auto">
+        안녕하세요! 개발과 음악, 디자인을 즐기는 포트폴리오 페이지 주인장입니다. 다양한 프로젝트와 실험을 기록하고 공유합니다.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-neutral-200 py-6 text-center text-sm text-neutral-500">
+    &copy; 2025 Developer Portfolio. All rights reserved.
+  </footer>
+
 </body>
 </html>
