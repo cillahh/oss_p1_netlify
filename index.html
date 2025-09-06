@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Sample Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-neutral-50 text-neutral-800">
 
   <!-- Header -->
   <header class="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/70 backdrop-blur">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
       <a href="#home" class="flex items-center gap-2">
-        <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-white shadow-md">
+        <div
+          class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-white shadow-md">
           <!-- Placeholder Icon -->
           <span class="text-lg font-bold">C</span>
         </div>
         <div class="leading-tight">
-          <p class="text-sm font-semibold tracking-wide">Portfolio</p>
-          <p class="-mt-0.5 text-xs text-neutral-500">Sample Page</p>
+          <p class="text-sm font-semibold tracking-wide">Ryu Ahyeon</p>
+          <p class="-mt-0.5 text-xs text-neutral-500">22000236</p>
         </div>
       </a>
 
       <div class="hidden md:flex items-center gap-6">
-        <a href="#playground" class="inline-flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-medium text-neutral-700 transition hover:bg-neutral-100 hover:text-neutral-900">
+        <a href="#playground"
+          class="inline-flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-medium text-neutral-700 transition hover:bg-neutral-100 hover:text-neutral-900">
           🧪 Playground
         </a>
-        <a href="#" class="inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:shadow">
+        <a href="https://github.com/cillahh" target="_blank"
+          class="inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transition hover:shadow">
           🐙 GitHub
         </a>
       </div>
@@ -45,11 +50,15 @@
     <section class="mt-16 text-center">
       <h2 class="text-2xl font-bold mb-6">Additional Pages</h2>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="nostyle.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">NoStyle</a>
-        <a href="style1.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style1</a>
-        <a href="style2.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style2</a>
-        <a href="example.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Example</a>
-        <a href="netlify.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Netlify</a>
+        <a href="nostyle.html"
+          class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">NoStyle</a>
+        <a href="style1.html"
+          class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style1</a>
+        <a href="style2.html"
+          class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Style2</a>
+        <a href="example.html"
+          class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Example</a>
+        <!-- <a href="netlify.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow-md">Netlify</a> -->
       </div>
     </section>
 
@@ -58,24 +67,24 @@
       <h2 class="text-2xl font-bold mb-6 text-center">My Projects</h2>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-          <img src="https://via.placeholder.com/300" alt="HOTketing" class="h-40 w-full object-cover rounded-xl mb-3">
+          <img src="../images/app0.jpeg" alt="HOTketing" class="h-80 w-full object-cover rounded-xl mb-3">
           <h3 class="text-lg font-semibold mb-1">HOTketing</h3>
-          <p class="text-sm text-neutral-600">한동대학교 공연장 현장 예매용 키오스크 앱. Flutter + Firebase로 개발.</p>
+          <p class="text-sm text-neutral-600">한동대학교 교재 공연장 예매용 키오스크 앱</p>
         </div>
         <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-          <img src="https://via.placeholder.com/300" alt="코스모스" class="h-40 w-full object-cover rounded-xl mb-3">
-          <h3 class="text-lg font-semibold mb-1">코스모스</h3>
-          <p class="text-sm text-neutral-600">밝고 섬세한 감성을 담아낸 개인 음악 프로젝트.</p>
+          <img src="../images/app1.jpeg" alt="액츠 나우" class="h-80 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">액츠 나우</h3>
+          <p class="text-sm text-neutral-600">제4차 서울 로잔대회 '사도행전 공동 설교 운동' 앱 (목회자 커뮤니티)</p>
         </div>
         <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-          <img src="https://via.placeholder.com/300" alt="잔물결" class="h-40 w-full object-cover rounded-xl mb-3">
-          <h3 class="text-lg font-semibold mb-1">잔물결</h3>
-          <p class="text-sm text-neutral-600">따뜻한 자기 탐색과 관계를 주제로 한 곡.</p>
+          <img src="../images/app2.jpg" alt="빚음" class="h-80 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">빚음(BISM)</h3>
+          <p class="text-sm text-neutral-600">크리스쳔 선교 플랫폼</p>
         </div>
         <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-          <img src="https://via.placeholder.com/300" alt="새 프로젝트" class="h-40 w-full object-cover rounded-xl mb-3">
-          <h3 class="text-lg font-semibold mb-1">새 프로젝트</h3>
-          <p class="text-sm text-neutral-600">추가할 프로젝트 설명.</p>
+          <img src="../images/app3.jpeg" alt="Desafio 1189" class="h-80 w-full object-cover rounded-xl mb-3">
+          <h3 class="text-lg font-semibold mb-1">Desafio 1189</h3>
+          <p class="text-sm text-neutral-600">목회자/선교자들을 위한 다국어 성경 읽기표 앱</p>
         </div>
       </div>
     </section>
@@ -90,12 +99,28 @@
 
     <!-- About Me -->
     <section class="mt-16 text-center">
-      <h2 class="text-2xl font-bold mb-4">About Me</h2>
-      <p class="text-neutral-600 max-w-2xl mx-auto">
-        안녕하세요! 개발과 음악, 디자인을 즐기는 포트폴리오 페이지 주인장입니다. 다양한 프로젝트와 실험을 기록하고 공유합니다.
-      </p>
-    </section>
+      <h2 class="text-2xl font-bold mb-8">About Me</h2>
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
+        <div
+          class="flex flex-col sm:flex-row items-center bg-white border border-neutral-200 rounded-2xl shadow-sm p-6 max-w-3xl w-full">
+          <!-- Profile Image -->
+          <img src="../images/profile.jpg" alt="Profile Photo"
+            class="h-40 w-40 rounded-xl object-cover shadow-md mb-4 sm:mb-0 sm:mr-6">
 
+          <!-- Info -->
+          <div class="text-left sm:text-left flex-1">
+            <p class="text-neutral-700 mb-2"><span class="font-semibold">이름 |</span> 류아현</p>
+            <p class="text-neutral-600 mb-1"><span class="font-semibold">학교 |</span> 한동대학교</p>
+            <p class="text-neutral-600 mb-1"><span class="font-semibold">학부 |</span> 전산전자공학부</p>
+            <p class="text-neutral-600 mb-1"><span class="font-semibold">1전공 |</span> AI.컴퓨터공학</p>
+            <p class="text-neutral-600 mb-1"><span class="font-semibold">2전공 |</span> 시각디자인</p>
+            <p class="text-neutral-600"><span class="font-semibold">GitHub |</span> <a
+                href="https://github.com/cillahh" class="text-indigo-500 hover:underline"
+                target="_blank">github.com/cillahh</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -104,4 +129,5 @@
   </footer>
 
 </body>
+
 </html>
